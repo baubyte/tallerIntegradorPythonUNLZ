@@ -1,2 +1,1 @@
-# tallerIntegradorPythonUNLZ
-Taller Integrador Python
+#Taller Integrador Python UNLZ
