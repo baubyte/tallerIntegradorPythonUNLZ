@@ -1,0 +1,3 @@
+#pass
+while True:
+    pass
