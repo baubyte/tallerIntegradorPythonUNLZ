@@ -6,9 +6,9 @@ utilizarlos para realizar todas las operaciones aritméticas vistas
 Mostrar todos los resultados por pantalla (un resultado por línea) con 
 su respectiva leyenda aclarando de que operación se trata.
  """
-#Variable
 print("**** Operaciones Aritméticas *****")
 print("***** Se aplicaran diversas operaciones a los números. ******")
+#Variables
 numeroUno = int(input("Ingrese un Número: "))
 numeroDos = int(input("Ingrese un Número: "))
 
