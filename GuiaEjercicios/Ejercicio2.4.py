@@ -7,15 +7,12 @@ Mostrar ambos por pantalla.
 """
 #Listas
 numeros = []
-numeroMayor = None
-numeroMenor = None
 print('*** Ingrese tanto Números Enteros como Desee ***\n ***Para terminar Ingrese \"0\"***\n\n')
 while True:
     numero = int(input('Ingrese un Número: '))
     if numero == 0:
-        numeros.sort(reverse=True)
-        print("El Mayor Número Ingresado es: ", numeros.pop())
-        print("El Menor Número Ingresado es: ", numeros[0])
+        print("El Mayor Número Ingresado es: ", max(numeros))
+        print("El Menor Número Ingresado es: ", min(numeros))
         break
     else:
         numeros.append(numero)
