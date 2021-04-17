@@ -19,6 +19,7 @@ if numero > 0:
         if resto == 0:
             multiplos.append(valorVerificar)
     if len(multiplos) > 0:
+        multiplos.sort(reverse=True)
         print("El Número Ingresado es Múltiplo de: ", multiplos)
     else:
         print("No se encontraron divisores exactos")
