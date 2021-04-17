@@ -1,4 +1,3 @@
-
 """
 Ejercicio 2.3
 Pedirle al usuario que ingrese dos números enteros por teclado y 
