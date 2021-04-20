@@ -6,11 +6,16 @@ Un número primo es aquel que solo tiene como divisores enteros
 (resto igual a cero) al número 1 y a sí mismo, por ejemplo, el número 5.
 """
 
-def esPrimo(num):
-    for numero in range(2, num):
-        if num % numero == 0:
-            return False
-    return True
+def esPrimo(numPrimo):
+    if numPrimo < 1:
+        return False
+    elif numPrimo == 2:
+        return True
+    else:
+        for numero in range(2, numPrimo):
+            if numPrimo % numero == 0:
+                return False
+            return True
 
 print("***Determina si el Numero Ingresado es Primo***")
 
