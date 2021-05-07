@@ -1,4 +1,5 @@
 """
+Ejercicio 4.3.
     Crea una función llamada modificar() que a partir de una lista de números realice las siguientes 
     tareas sin modificar la original:
         Borrar los elementos duplicados.
@@ -11,9 +12,22 @@
     coincide con la suma de los demás elementos.
 """
 def modificar():
-    #Lista con numero duplicados
-    numeros = [1,2,3,3,4,4,5,5,6,6,7,8,9,9,0]
-    numerosOrdenados = numeros.sort()
-    numerosUnicos = set(numerosOrdenados)
-    listaNumImpares = [numero for numero in numerosUnicos if numero % 2 == 1]
-    
+    #Lista con números duplicados
+    numeros = [10,12,14,5,8,9,3,1,2,3,3,4,4,5,5,6,6,7,8,9,9,0]
+    #Se eliminan los repetidos
+    numerosUnicos = set(numeros)
+    #Se eliminan los impares
+    sinNumImpares = [numero for numero in numerosUnicos if numero % 2 == 0]
+    nuevaLista = [sum(sinNumImpares)]
+    nuevaLista.extend(sinNumImpares) 
+    return nuevaLista
+
+otraLista = modificar()
+if sum(otraLista[1:]) == otraLista[0]:
+    print("Suma: ", otraLista[0])
+    print("Resto de la lista: ", otraLista[1:])
+    print("Lista completa: ", otraLista)
+    print("Son iguales")
+else:
+    print("No son iguales")
+    print("Lista completa: ", otraLista)
