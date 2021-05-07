@@ -1,4 +1,5 @@
 """
+Ejercicio 3.4.
 Escribir un programa que pida al usuario, que ingrese una frase por teclado.
 El programa deberá tener dos funciones, una que reciba la frase y devuelva solo 
 las vocales de dicha frase y otra función que reciba la misma frase pero que devuelva 
