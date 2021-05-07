@@ -1,4 +1,5 @@
 """
+Ejercicio 3.6.
 Modificar el siguiente código para que no de error al recibir un 
 argumento que no es del tipo Lista.
 def lista(argumentos):
