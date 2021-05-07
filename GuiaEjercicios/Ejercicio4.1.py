@@ -34,7 +34,7 @@ ventana.title('Ejercicio 4.1')
 #Desactiva el maximizar
 ventana.resizable(0,0)
 #Tamaño de la Ventana
-ventana.geometry("460x200")
+ventana.geometry("400x200")
 #Etiquetas
 lblTitulo = ttk.Label(ventana, text="Presiona alguno de los Botones", font=fuente)
 lblNumAzar = ttk.Label(ventana, text="Tu Número es: ", font=fuente)
