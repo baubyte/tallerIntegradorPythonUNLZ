@@ -23,21 +23,21 @@ while True:
         numeroDos = int(input("Ingrese otro Numero: "))
         print()
         print(f"El Resultado de la Suma es: {numeroUno + numeroDos}")
-        os.system ("pause") 
+        input("Presione Enter para Continuar...")
     if opcion == 2:
         print("Estas en la Opción Restar")
         numeroUno = int(input("Ingrese un Numero: "))
         numeroDos = int(input("Ingrese otro Numero: "))
         print()
         print(f"El Resultado de la Resta es: {numeroUno - numeroDos}")
-        os.system ("pause") 
+        input("Presione Enter para Continuar...")
     if opcion == 3:
         print("Estas en la Opción Multiplicar")
         numeroUno = int(input("Ingrese un Numero: "))
         numeroDos = int(input("Ingrese otro Numero: "))
         print()
         print(f"El Resultado de la Multiplicación es: {numeroUno * numeroDos}")
-        os.system ("pause") 
+        input("Presione Enter para Continuar...") 
     if opcion == 4:
         print("Estas en la Opción Dividir")
         numeroUno = int(input("Ingrese un Numero: "))
@@ -47,10 +47,10 @@ while True:
         divisionDecimal = numeroUno / numeroDos if numeroDos != 0 else "No se pude dividir por 0"
         print(f"El Resultado de la Division Entera es: {divisionEntera}")
         print(f"El Resultado de la Division Decimal es: {divisionDecimal}")
-        os.system ("pause") 
+        input("Presione Enter para Continuar...") 
     if opcion == 5:
         print("Saliste del Programa ")
         break
     if opcion < 1 or opcion > 5:
         print("La Opción Ingresada no es correcta")
-        os.system ("pause")
+        input("Presione Enter para Continuar...")
