@@ -21,23 +21,23 @@ print(diccionario)
 #Se ordena el diccionario por valores (se convierte en una lista de tuplas).
 dicOrdenado = sorted(diccionario.items(), key=operator.itemgetter(1), reverse=True)
 #Se crean las listas de claves y valores donde se van a almacenar los mas repetidos.
-listaKey = []
+listKey = []
 listValue = []
 #Recorremos la lista de tuplas.
 for contador in range(len(dicOrdenado)):
     #Si es el primero, guardamos en las listas de valores y claves.
     #Siempre se va a agregar, dado que por el orden siempre va a ser el mas repetido.
     if contador == 0:
-        listaKey.append(dicOrdenado[contador][0])
+        listKey.append(dicOrdenado[contador][0])
         listValue.append(dicOrdenado[contador][1])
     #Con el segundo valor se toma la misma condición del elemento anterior.
     elif contador == 1:
-        listaKey.append(dicOrdenado[contador][0])
+        listKey.append(dicOrdenado[contador][0])
         listValue.append(dicOrdenado[contador][1])
     #Si el valor actual se encuentra en la lista de valores, se agrega.
     elif dicOrdenado[contador][1] in listValue:
-        listaKey.append(dicOrdenado[contador][0])
+        listKey.append(dicOrdenado[contador][0])
         listValue.append(dicOrdenado[contador][1])
         
-for i in range(len(listaKey)):
-    print(f"El número {listaKey[i]} se repite {listValue[i]} veces")
+for i in range(len(listKey)):
+    print(f"El número {listKey[i]} se repite {listValue[i]} veces")
