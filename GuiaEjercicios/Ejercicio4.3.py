@@ -18,9 +18,11 @@ def modificar():
     numerosUnicos = set(numeros)
     #Se eliminan los impares
     sinNumImpares = [numero for numero in numerosUnicos if numero % 2 == 0]
-    nuevaLista = [sum(sinNumImpares)]
-    nuevaLista.extend(sinNumImpares) 
-    return nuevaLista
+    #nuevaLista = [sum(sinNumImpares)]
+    #nuevaLista.extend(sinNumImpares) 
+    sumaLista = sum(sinNumImpares)
+    sinNumImpares.insert(0,sumaLista)
+    return sinNumImpares
 
 otraLista = modificar()
 if sum(otraLista[1:]) == otraLista[0]:
