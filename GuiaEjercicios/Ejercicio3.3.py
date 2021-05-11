@@ -17,7 +17,7 @@ def esPrimo(numPrimo):
                 return False
             return True
 
-#Agrega los Numero primos que se encuentra entre}
+#Agrega los Numero primos que se encuentra entre
 #los números que le pasemos
 
 def primosAdd(numUno, numDos):
