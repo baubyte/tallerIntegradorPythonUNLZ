@@ -36,7 +36,7 @@ def validateLen(password):
 
 def validateContainAZ(password):
     for letra in password:
-        if ord(letra) >= ord('a') and ord(letra) <= ord('z'):
+        if ord(letra) >= ord('A') and ord(letra) <= ord('Z'):
             return True
     return False
 # Comprueba si la cadena contiene al menos una letra mayúscula [A-Z]
@@ -45,7 +45,7 @@ def validateContainAZ(password):
 
 def validateContainaz(password):
     for letra in password:
-        if ord(letra) >= ord('A') and ord(letra) <= ord('Z'):
+        if ord(letra) >= ord('a') and ord(letra) <= ord('z'):
             return True
     return False
 # Comprueba si la cadena contiene al menos una un numero [1-9]
