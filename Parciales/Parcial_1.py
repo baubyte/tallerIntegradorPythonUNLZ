@@ -1,5 +1,5 @@
 """
-    Escribir un programa que verifique la validez de la CLAVE ingresadasiguiendo los 
+    Escribir un programa que verifique la validez de la CLAVE ingresada siguiendo los 
     siguentes criterios:
         1.Debe contener una longitud mínima de 6 caracteres.
         2.Debe tener una longitud máxima de 12 caracteres.
