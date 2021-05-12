@@ -9,30 +9,55 @@
 """
 # Permite acceder a funcionalidades dependientes del Sistema Operativo
 import os
+
+# Valida si la contraseña cumple con los requerimientos
+# Retorna true en si cumple caso contrio false
+
+
 def validatePassword(password):
-    if 6 <= len(password) <= 12:
+    if validateLen(password):
         if validateContainAZ(password) and validateContainaz(password):
             if validateContain1a9(password):
                 return True
     return False
 
+# Comprueba si el tamaño de la cadena esta entre 6 y 12 carateres
+# Retorna true en si cumple caso contrio false
+
+
+def validateLen(password):
+    if 6 <= len(password) <= 12:
+        return True
+    return False
+
+# Comprueba si la cadena contiene al menos una letra minúscula [a-z]
+# Retorna true en si cumple caso contrio false
+
+
 def validateContainAZ(password):
     for letra in password:
-        if ord(letra) >= ord('a') and ord(letra)  <= ord('z'):
+        if ord(letra) >= ord('a') and ord(letra) <= ord('z'):
             return True
     return False
+# Comprueba si la cadena contiene al menos una letra mayúscula [A-Z]
+# Retorna true en si cumple caso contrio false
+
 
 def validateContainaz(password):
     for letra in password:
-        if ord(letra) >= ord('A') and ord(letra)  <= ord('Z'):
+        if ord(letra) >= ord('A') and ord(letra) <= ord('Z'):
             return True
     return False
+# Comprueba si la cadena contiene al menos una un numero [1-9]
+# Retorna true en si cumple caso contrio false
+
 
 def validateContain1a9(password):
     for letra in password:
-        if ord(letra) >= ord('0') and ord(letra)  <= ord('9'):
+        if ord(letra) >= ord('0') and ord(letra) <= ord('9'):
             return True
     return False
+
 
 usuario = input('Escriba su Usuario: ')
 while True:
@@ -43,5 +68,5 @@ while True:
         print("Registro exitoso")
         break
     else:
-        print("La Contraseña no Cumple con los Parametros de Segurida")
+        print("La Contraseña no Cumple con los Parametros de Seguridad")
         input("Presione Enter e Intente de Nuevo")
