@@ -13,6 +13,9 @@ import os
 # Permite utilizar expresiones regulares
 import re
 
+# Valida si la contraseña cumple con los requerimientos
+# Retorna true en si cumple caso contrio false
+
 def validatePassword(password):
     if 6 <= len(password) <= 12:
         if re.search('[a-z]', password) and re.search('[A-Z]', password):
@@ -30,5 +33,5 @@ while True:
         print("Registro exitoso")
         break
     else:
-        print("La Contraseña no Cumple con los Parametros de Segurida")
+        print("La Contraseña no Cumple con los Parametros de Seguridad")
         input("Presione Enter e Intente de Nuevo")
