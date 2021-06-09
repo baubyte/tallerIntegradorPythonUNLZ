@@ -2,7 +2,7 @@ from geopy.geocoders import Nominatim
 
 geolocator = Nominatim(user_agent="baubyte")
 
-lista = ['Querandíes, 4451, Buenos Aires, Argentina',
+lista = ['Querandíes, 459, Buenos Aires, Argentina',
          'Gallo, 908, Buenos Aires, Argentina'
         ]
 for index in lista:
