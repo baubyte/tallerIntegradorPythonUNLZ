@@ -1,4 +1,6 @@
 class Alumno():
+    
+
     def __init__(self):
         self.nombre = input('Nombre del Alumno: ')
         self.apellido = input('Apellido del Alumno: ')
