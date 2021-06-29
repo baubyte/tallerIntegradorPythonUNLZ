@@ -11,7 +11,6 @@ class Numeros():
                 print("El Numero debe se mayor a cero.")
             else:
                 self.valores = [random.randint(minNum,maxNum) for _ in range(cantNumAzar)]
-
                 break
 
     def candidato(self):
